@@ -1,0 +1,115 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+table {
+
+    background-color:gray ;
+    display: table-cell;
+    border-spacing: 0.75em;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+td {
+    text-align: center;
+   /* border: solid 0.05em black; */
+    display: table-cell;
+    padding: 0.75em;
+    display: inline;
+}
+
+span {
+    background-color: blue;
+}
+
+#lowerNavbar {
+
+    
+    
+    background-color: gray;
+
+}
+
+.NavLinks {
+    text-decoration: none;
+    color: white;
+}
+
+.NavBtn:hover {
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+.ContainerPicture {
+    
+    cursor: pointer;
+    background-size:cover
+}
+
+.WideTopicContainer, .WideHeadlineContainer {
+    position: absolute;
+}
+
+.WidePictureContainer {
+   position: relative; 
+}
+
+.WideTopicContainer {
+    background-color:rgba(173, 216, 230, 0.85);
+    margin-top: 7.5em;
+    padding-right: 2.5em;
+    padding-left: 1em;
+    font-size: 1.20em;
+    color: white;
+    height: 2.9em;
+}
+
+.WideHeadlineContainer {
+    background-color: rgba(128, 128, 128, 0.85);
+    color:white;
+    margin-top: 10em; 
+    padding-right: 2.5EM;
+    padding-left: 1em;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+.WideHeadlineContainer:hover {
+    background-color: rgba(176, 219, 233, 1);
+}
+
+.SmallPictureContainer {
+    margin-top: 25em;
+    width: 27em;
+    height: 27em;
+    background-image: url(images/astro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+
+}
+
+
+.SmallHeadlineContainer {
+    background-color:rgba(211, 216, 218, 0.85);
+    font-size: 1.20em;
+    color: white;
+    margin-top: 18.3em;
+    position: absolute;
+    
+}
+
+.SmallTopicContainer {
+    background-color:rgba(173, 216, 230, 0.85);
+    font-size: 1.20em;
+    color: white;
+    margin-top: 15.1em;
+    position: absolute; /* Hover, osv */
+}
