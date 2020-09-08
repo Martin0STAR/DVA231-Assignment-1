@@ -1,9 +1,21 @@
 <!DOCTYPE html>
     <head>
         <link href="index.css" rel="stylesheet">
-        <title></title>
+        <title>Nasa Unofficial Site</title>
     </head>
     <body>
+            <table id="upperNavbar">
+                <tr>
+                    <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > Missions </a> </td>
+                    <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > Galleries </a> </td>
+                    <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > NASA TV </a> </td>
+                    <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > Follow NASA </a> </td>
+                    <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > Downloads </a> </td>
+                    <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > About </a> </td>
+                    <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > NASA Audiences </a> </td>
+                    <td><input id="searchBar" type="text" placeholder="Search"></td>
+                </tr>
+            </table>
             <table id="lowerNavbar">
                 <tr>
                     <td class="NavBtn"> <a href = "http://www.google.com" class="NavLinks" > Humans in Space </a> </td>
@@ -17,16 +29,78 @@
                     <td class="NavBtn"> <a href = "http://www.google.com" class="NavLinks" > Benefits to You </a> </td>
                 </tr>
             </table>
-            <div class="WidePictureContainer">
-                <span class="WideTopicContainer"><p style="opacity: 1;">Space Station</p> </span>
-                <span class="WideHeadlineContainer"> <p style="opacity: 1;">Expedition 48 Crews Lands Safely on Earth</p> </span>
-                <img class="ContainerPicture" src="images/planet.jpg" width="1200em" height="300em">
-            </div>
             
-            <div class="SmallPictureContainer">
-                <span class="SmallTopicContainer"><p style="opacity: 1;">Expedition 48</p></span>
-                <span class="SmallHeadlineContainer"><p style="opacity: 1;">NASA's Record-breaking Astronaut, <br> Crewmates Safely Return to Earth</p> </span>
-                
-            </div>
+            <table id="content">
+                <tr>
+                    <td colspan="4">
+                        <div class="WidePictureContainer">
+                            <span class="WideTopicContainer"><p class="solidText">Space Station</p> </span>
+                            <span class="WideHeadlineContainer"> <p class="solidText">Expedition 48 Crews Lands Safely on Earth</p> </span>
+                            <img class="imageWide" src="images/planet.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="SmallPictureContainer">
+                            <span class="SmallTopicContainer"><p class="solidText">Expedition 48</p></span>
+                            <span class="SmallHeadlineContainer"><p class="solidText">NASA's Record-breaking Astronaut, <br> Crewmates Safely Return to Earth</p> </span>
+                            <img class="imageSmall" src="images/astro.jpg">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="InformationContainer">
+                            <a>NASA Events</a>
+                            <hr>
+                            <p class>Wednesday, Sept. 7: OSIRIS-REx Science and Engineering Talk <br> FILLER FILLER FILLER FILLER FILLER FILLER FILLER <br> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER</p>
+                            <hr id="topInfoboxSeparator">
+                            <table id="InfoFooterTable"> 
+                                <tr>    
+                                    <td><a class="NavLinks" href="http://www.google.com">Calendar </a> </td>
+                                    <td id="InfoFooterSpacing"><a class="NavLinks" href="http://www.google.com">Launches and Landings</a> </td>
+                                </tr> 
+                            </table>
+                        </div>
+                    </td>
+                    <td colspan="2">
+                        <div class="MediumInformationContainer">
+                            <div class="SmallPictureContainer">
+                                <image class="imageSmall" src="images/pulsar.jpg"></image>
+                                
+                            </div>
+                            <div class="triangle-left"></div>
+                            <div class="InformationContainer" id="InformationWideBox"> 
+                                <h1>VERY LONG HEADLINE FILLER FILLER FILLER FILLER</h1>
+                                <p class="TextBlackLeft"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER</p>
+                                <br>
+                                <a href="http://www.google.com" class="NavLinksBlack" > Link 1 </a>
+                                <br>
+                                <a href="http://www.google.com" class="NavLinksBlack"> Link 2 </a>
+                                <br>
+                                <a href="http://www.google.com" class="NavLinksBlack"> Link 3 </a>
+                                <br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="SmallPictureContainer" >
+                            <video controls> <source src="videos/mov_bbb.mp4" type="video/mp4"> </video>
+                        </div>
+                    </td>
+                    <td colspan="2">
+                        <div class="MediumInformationContainer">
+                            <img class="imageMedium" src="images/galaxy.jpg">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="SmallPictureContainer">
+                            <a class="twitter-timeline" data-width="27em" data-height="27em" data-theme="dark" href="https://twitter.com/NASA?ref_src=twsrc%5Etfw">Tweets by NASA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        
     </body>
 </html>

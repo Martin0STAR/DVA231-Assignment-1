@@ -1,37 +1,61 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-
-table {
-
-    background-color:gray ;
-    display: table-cell;
-    border-spacing: 0.75em;
-    margin-left: auto;
-    margin-right: auto;
-
-    
-}
-
-td {
-    text-align: center;
-   /* border: solid 0.05em black; */
-    display: table-cell;
-    padding: 0.75em;
-    display: inline;
+    background-color: black;
+    background-image: url(images/nasa-logo.svg);
+    background-repeat: no-repeat;
+    background-position-y: 1%;
+    background-position-x: 10%;
 }
 
 span {
     background-color: blue;
 }
 
-#lowerNavbar {
+hr {
+    color: white;
+    border-width:0;
+    background-color: white;
+    height: 0.1em;
+}
 
-    
-    
-    background-color: gray;
+td {
+    padding: 0.4375em
+}
 
+video {
+    width: 27em;
+    height: 27em;
+    object-fit: fill;
+}
+
+h1 {
+    color:black;
+}
+
+.MediumInformationContainer {
+    height: 27em;
+    width: 54em;
+    background-color: brown;
+    display: flex;
+}
+
+.triangle-left {  /* Hämtad från W3 Schools */
+	width: 0;
+	height: 0;
+	border-top: 1.5625em solid transparent;
+	border-right: 3.125em solid white;
+    border-bottom: 1.5625em solid transparent;
+    position: absolute;
+    margin-left: 24em;
+    margin-top:11.5em ; 
+}
+
+.content {
+
+    border-collapse: separate;
+    border-spacing: 20em 20em;
+    background-color: orange;
+    width: 100%;
 }
 
 .NavLinks {
@@ -39,15 +63,34 @@ span {
     color: white;
 }
 
-.NavBtn:hover {
-    background-color: #a8a8a8;
+.NavLinksBlack {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+
+.NavBtn {
+    text-align: center;
+    display: table-cell;
+    padding: 0.75em;
+    display: inline;
+}
+
+.NavBtnTop {
+    text-align: center;
+    display: table-cell;
+    padding: 0.75em;
+    display: inline;
+}
+
+.NavBtnTop:hover {
+    background-color: slateblue;
     cursor: pointer;
 }
 
-.ContainerPicture {
-    
+.NavBtn:hover {
+    background-color: #a8a8a8;
     cursor: pointer;
-    background-size:cover
 }
 
 .WideTopicContainer, .WideHeadlineContainer {
@@ -60,7 +103,8 @@ span {
 
 .WideTopicContainer {
     background-color:rgba(173, 216, 230, 0.85);
-    margin-top: 7.5em;
+    margin-top: 12.7em;
+    margin-left: 1.58em;
     padding-right: 2.5em;
     padding-left: 1em;
     font-size: 1.20em;
@@ -71,8 +115,9 @@ span {
 .WideHeadlineContainer {
     background-color: rgba(128, 128, 128, 0.85);
     color:white;
-    margin-top: 10em; 
-    padding-right: 2.5EM;
+    margin-top: 15em;
+    margin-left: 1.5em; 
+    padding-right: 2.5em;
     padding-left: 1em;
     font-size: 1.25em;
     cursor: pointer;
@@ -80,28 +125,36 @@ span {
 
 .WideHeadlineContainer:hover {
     background-color: rgba(176, 219, 233, 1);
+    cursor: pointer;
 }
 
 .SmallPictureContainer {
-    margin-top: 25em;
     width: 27em;
     height: 27em;
-    background-image: url(images/astro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    cursor: pointer;
-    display: block;
+    background-color: black;
 
 }
 
+.imageSmall {
+    height: 27em;
+    width: 27em;
+}
+
+.imageMedium {
+    height: 27em;
+    width: 54em;
+}
+
+.imageWide {
+    height: 27em;
+    width: 108em;
+}
 
 .SmallHeadlineContainer {
     background-color:rgba(211, 216, 218, 0.85);
     font-size: 1.20em;
     color: white;
-    margin-top: 18.3em;
+    margin-top: 18.1em;
     position: absolute;
     
 }
@@ -110,6 +163,75 @@ span {
     background-color:rgba(173, 216, 230, 0.85);
     font-size: 1.20em;
     color: white;
-    margin-top: 15.1em;
+    margin-top: 14.95em;
     position: absolute; /* Hover, osv */
 }
+
+.SmallTopicContainer:hover {
+    color: ;
+}
+
+.solidText {
+    opacity: 1;
+}
+
+.TextBlackLeft {
+    margin-left: 1em;
+    color: black;
+}
+
+.textBlack {
+    color:black;
+}
+
+#InformationWideBox {
+    flex: 1;
+    background-color: white;
+}
+
+#InfoFooterSpacing {
+    padding-left: 6em;
+}
+
+#topInfoboxSeparator {
+    margin-top: 15.5em;
+}
+
+#upperNavbar {
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0.75em;
+}
+
+#searchBar {
+    width: 8em;
+    padding: 0.5em;
+    background-color: #a8a8a8;
+    border: solid #a8a8a8;
+    background-image: url(images/search2.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+}
+
+#lowerNavbar {
+
+    background-color:gray ;
+    border-spacing: 0.75em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.InformationContainer {
+    width: 27em;
+    height: 27em;
+    background-color: #3366ff;
+    color: white;
+}
+
+#InfoFooterTable {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+} 
