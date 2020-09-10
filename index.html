@@ -4,7 +4,7 @@
         <script src="functions.js"></script>
         <title>Nasa Unofficial Site</title>
     </head>
-    <body>
+    <body onload="timerCycle()">
             <table id="upperNavbar">
                 <tr>
                     <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > Missions </a> </td>
@@ -33,9 +33,25 @@
             <div id="outer-container"> 
                 <div class="grid-container">
                     <div class="WidePictureContainer item1">
-                        <span class="WideTopicContainer"><p class="solidText">Space Station</p> </span>
-                        <span class="WideHeadlineContainer"> <p class="solidText">Expedition 48 Crews Lands Safely on Earth</p> </span>
-                        <img class="imageWide" src="images/planet.jpg">
+                        <div id="slideshow1">
+                            <span class="WideTopicContainer"><p class="solidText">Space Station</p> </span>
+                            <span class="WideHeadlineContainer"> <p class="solidText">Expedition 48 Crews Lands Safely on Earth</p> </span>
+                            <img class="imageWide" src="images/planet.jpg">
+                        </div>
+        
+                        <div id="slideshow2">
+                            <span class="WideTopicContainer"><p class="solidText">Moon to Mars</p> </span>
+                            <span class="WideHeadlineContainer"> <p class="solidText">NASA Enlists Commercial Partners to Fly Payloads to Moon
+                            </p> </span>
+                            <img class="imageWide" src="images/galaxy2.jpg">
+                        </div>
+        
+                        <div id="slideshow3">
+                            <span class="WideTopicContainer"><p class="solidText">Hazards</p> </span>
+                            <span class="WideHeadlineContainer"> <p class="solidText">NOAA-NASA Suomi NPP Captures Fires and Aerosols Across America
+                            </p> </span>
+                            <img class="imageWide" src="images/galaxy3.jpg">
+                        </div>
                     </div>
                     <div class="InformationContainer item2">
                         <a>NASA Events</a>
@@ -56,7 +72,7 @@
                             <p>FILLER FILLER FILLER FILLER FILLER FILLER </p>
                         </div>
                         <span class="SmallTopicContainer" id="TopicCon"><p class="solidText">Expedition 48</p></span>
-                        <span class="SmallHeadlineContainer" id="HeadlineCon" ><p class="solidText " onmouseover="showContent(this)" onmouseout="hideContent(this)">NASA's Record-breaking Astronaut, <br> Crewmates Safely Return to Earth</p> </span>
+                        <span class="SmallHeadlineContainer" id="HeadlineCon" onmouseover="showContent(this)" onmouseout="hideContent(this)" ><p class="solidText " >NASA's Record-breaking Astronaut, <br> Crewmates Safely Return to Earth</p> </span>
                         <img class="imageSmall" id="AstroImage" src="images/astro.jpg" >
                         
                     </div>
@@ -89,7 +105,6 @@
                     </div>
                 </div>
             </div>
-        
 
     </body>
 </html>

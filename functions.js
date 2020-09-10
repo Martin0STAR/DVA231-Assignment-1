@@ -20,3 +20,31 @@ function showContent() {
     topic.style.display = "none";
 }
 
+function slideshowCycle() {
+    var picture_1 = document.getElementById("slideshow1");
+    var picture_2 = document.getElementById("slideshow2");
+    var picture_3 = document.getElementById("slideshow3");
+
+    if (picture_1.style.display === "block") {
+        picture_1.style.display = "none"
+        picture_2.style.display = "block";
+    }
+    else if (picture_2.style.display === "block") {
+        picture_2.style.display = "none";
+        picture_3.style.display = "block";
+    }
+    else if(picture_3.style.display === "block"){
+        picture_3.style.display = "none";
+        picture_1.style.display = "block";
+    }
+    else {
+        picture_1.style.display = "block";
+    }
+}
+
+function timerCycle() {
+
+    setInterval(slideshowCycle, 3000);
+}
+
+

@@ -304,3 +304,15 @@ h1 {
     padding-top: 1em;
 
 }
+
+#slideshow1 {
+    display: block;
+}
+
+#slideshow2 {
+    display: none;
+}
+
+#slideshow3 {
+    display: none;
+}
