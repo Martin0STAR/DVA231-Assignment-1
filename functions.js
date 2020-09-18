@@ -44,7 +44,7 @@ function slideshowCycle() {
 
 function timerCycle() {
 
-    setInterval(slideshowCycle, 3000);
+    setInterval(slideshowCycle, 30000);
 }
 
 

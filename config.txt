@@ -1,0 +1,1 @@
+news/Ass2News.json

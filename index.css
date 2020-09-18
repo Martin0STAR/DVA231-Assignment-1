@@ -13,7 +13,7 @@ span {
 
 hr {
     color: white;
-    border-width:0;
+    border-width: 0;
     background-color: white;
     height: 0.1em;
 }
@@ -29,7 +29,7 @@ video {
 }
 
 h1 {
-    color:black;
+    color: black;
 }
 
 .MediumInformationContainer {
@@ -39,19 +39,18 @@ h1 {
     display: flex;
 }
 
-.triangle-left {  /* Hämtad från W3 Schools */
-	width: 0;
-	height: 0;
-	border-top: 1.5625em solid transparent;
-	border-right: 3.125em solid white;
+.triangle-left { /* Hämtad från W3 Schools */
+    width: 0;
+    height: 0;
+    border-top: 1.5625em solid transparent;
+    border-right: 3.125em solid white;
     border-bottom: 1.5625em solid transparent;
     position: absolute;
     margin-left: 24em;
-    margin-top:11.5em ; 
+    margin-top: 11.5em;
 }
 
 .content {
-
     border-collapse: separate;
     border-spacing: 20em 20em;
     background-color: orange;
@@ -83,10 +82,10 @@ h1 {
     display: inline;
 }
 
-.NavBtnTop:hover {
-    background-color: slateblue;
-    cursor: pointer;
-}
+    .NavBtnTop:hover {
+        background-color: slateblue;
+        cursor: pointer;
+    }
 
 .NavBtn:hover {
     background-color: #a8a8a8;
@@ -98,11 +97,11 @@ h1 {
 }
 
 .WidePictureContainer {
-   position: relative; 
+    position: relative;
 }
 
 .WideTopicContainer {
-    background-color:rgba(173, 216, 230, 0.85);
+    background-color: rgba(173, 216, 230, 0.85);
     margin-top: 12.7em;
     margin-left: 1.58em;
     padding-right: 2.5em;
@@ -114,26 +113,25 @@ h1 {
 
 .WideHeadlineContainer {
     background-color: rgba(128, 128, 128, 0.85);
-    color:white;
+    color: white;
     margin-top: 15em;
-    margin-left: 1.5em; 
+    margin-left: 1.5em;
     padding-right: 2.5em;
     padding-left: 1em;
     font-size: 1.25em;
     cursor: pointer;
 }
 
-.WideHeadlineContainer:hover {
-    background-color: rgba(176, 219, 233, 1);
-    cursor: pointer;
-}
+    .WideHeadlineContainer:hover {
+        background-color: rgba(176, 219, 233, 1);
+        cursor: pointer;
+    }
 
 .SmallPictureContainer {
     width: 27em;
     height: 27em;
     background-color: black;
     position: relative;
-
 }
 
 .imageSmall {
@@ -152,25 +150,24 @@ h1 {
 }
 
 .SmallHeadlineContainer {
-    background-color:rgba(211, 216, 218, 0.85);
+    background-color: rgba(211, 216, 218, 0.85);
     font-size: 1.20em;
     color: white;
-    margin-top: 18.1em;
+    margin-top: 18.0em;
     position: absolute;
-    
 }
 
 .SmallTopicContainer {
-    background-color:rgba(173, 216, 230, 0.85);
-    font-size: 1.20em;
+    background-color: rgba(173, 216, 230, 0.85);
+    font-size: 0.9em;
     color: white;
-    margin-top: 14.95em;
+    margin-top: 21.42em;
     position: absolute; /* Hover, osv */
 }
 
-.SmallTopicContainer:hover {
-    color: rgba(173, 216, 230, 1);
-}
+    .SmallTopicContainer:hover {
+        color: rgba(173, 216, 230, 1);
+    }
 
 .solidText {
     opacity: 1;
@@ -182,7 +179,7 @@ h1 {
 }
 
 .textBlack {
-    color:black;
+    color: black;
 }
 
 .InformationContainer {
@@ -200,10 +197,8 @@ h1 {
 }
 
 #outer-container {
-    display:grid;
+    display: grid;
     height: 100%;
-    
-
 }
 
 .item1 {
@@ -211,7 +206,7 @@ h1 {
     grid-column-end: 5;
 }
 
-.item2{
+.item2 {
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -236,12 +231,12 @@ h1 {
 }
 
 .item6 {
-    grid-row:3;
+    grid-row: 3;
     grid-column-start: 2;
     grid-column-end: 4;
 }
 
-.item7{
+.item7 {
     grid-row: 3;
     grid-column-start: 4;
     grid-column-end: 5;
@@ -280,8 +275,7 @@ h1 {
 }
 
 #lowerNavbar {
-
-    background-color:gray ;
+    background-color: gray;
     border-spacing: 0.75em;
     margin-left: auto;
     margin-right: auto;
@@ -292,17 +286,16 @@ h1 {
     margin-right: 1.5em;
     margin-left: 1.5em;
     margin-bottom: 1.5em;
-} 
+}
 
 #FadeContainer {
-    background-color:rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 1000;
     position: relative;
     width: 27em;
     height: 26em;
     display: none;
     padding-top: 1em;
-
 }
 
 #slideshow1 {
