@@ -30,13 +30,13 @@
     }
 
     function logInPageLoad() {
-        if ($_SESSION["isLoggedin"] == true) {
+        if (isset( $_SESSION["isLoggedin"]) && $_SESSION["isLoggedin"] == true) {
             header('location:admin.php');
         }
     }
 
     function adminPageLoad() {
-        if ($_SESSION["isLoggedin"] == false) {
+        if (!isset( $_SESSION["isLoggedin"]) && $_SESSION["isLoggedin"] == false) {
             header('location:login.php');
         }
     }
