@@ -2,31 +2,43 @@
 
     function load() {
 
-        $loadFile = file_get_contents("config.txt");
-
-        $output = file_get_contents($loadFile);
-        $output = json_decode($output, true);
+        $queryString = "SELECT * FROM news ORDER BY ID DESC LIMIT 0,3"; //Tar in tre senaste nyheterna
+        $db = new mysqli("localhost", "nasaUser", "123", "NasaDatabase");
+        $var = mysqli_query ($db, $queryString);
+        $output = [];
+        while ( $temp = mysqli_fetch_assoc($var)) {
+            array_push ($output, $temp);
+        }
 
         return $output;
     }
 
     function loadInput() {
-        $file = fopen ("config.txt","w") or die ("Cannot open file!");
+        $userInput = $_POST["uInput"];
+        $db = new mysqli("localhost", "nasaUser", "123", "NasaDatabase");
+        
+        $file = file_get_contents ($userInput);
        
-        $input = implode($_POST);
- 
-        if (file_exists($input) && $input != "news") {
-            
-         fwrite($file, $input);
-         fclose();
-         header('location:index.php');
-        }
-        else {
-                
-         fwrite($file, "news/Ass2News.json");
-         fclose($file);
-         
-        }
+        $input = json_decode($file,true);
+         foreach($input as $InputNews) {
+             $queryCount = "SELECT ID FROM news";
+             $var = mysqli_num_rows(mysqli_query ($db, $queryCount)) + 1;
+             printf($var);
+
+            $iNewsTitle = '"' . $InputNews["title"] . '"'; 
+            $iNewsContent = '"' . $InputNews["content"] . '"';
+            $iNewsImage = '"' . $InputNews["imgurl"] . '"';
+
+
+            printf($iNewsTitle);
+            printf($iNewsContent);
+            printf($iNewsImage);
+
+
+            $queryString = "INSERT INTO news (title, content, image, ID) VALUES ($iNewsTitle,  $iNewsContent, $iNewsImage, $var)";
+            printf($queryString);
+            mysqli_query ($db, $queryString);
+         }
     }
 
     function logInPageLoad() {
@@ -62,4 +74,16 @@
         
     }
 
+    function SearchDatabase () {
+        $db = new mysqli("localhost", "nasaUser", "123", "NasaDatabase");
+        $queryString = "SELECT * FROM news WHERE title LIKE '%e%' LIMIT 0, 5";
+        $var = mysqli_query ($db, $queryString);
+
+        $output = [];
+        while ( $temp = mysqli_fetch_assoc($var)) {
+            array_push ($output, $temp);
+        }
+        return $output;
+
+    }
 ?>

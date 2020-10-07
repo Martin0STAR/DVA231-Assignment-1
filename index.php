@@ -21,9 +21,19 @@
                     <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > About </a> </td>
                     <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > NASA Audiences </a> </td>
                     <td class="NavBtnTop"> <a href = "login.php" class="NavLinks" > Admin </a> </td>
-                    <td><input id="searchBar" type="text" placeholder="Search"></td>
+                    <td><input id="searchBar" type="text" placeholder="Search" onkeyup="results(this.value)"></td>
                 </tr>
             </table>
+            <span id = "searchPopup">
+            
+            
+            <!-- <p> <a href="https://www.google.com"> </a> </p>
+            <p> <a href="https://www.google.com"> </a> </p>
+            <p> <a href="https://www.google.com"> </a> </p>
+            <p> <a href="https://www.google.com"> </a> </p>
+            <p> <a href="https://www.google.com"> </a> </p> -->
+            
+            </span>
             <table id="lowerNavbar">
                 <tr>
                     <td class="NavBtn"> <a href = "http://www.google.com" class="NavLinks" > Humans in Space </a> </td>
@@ -83,12 +93,12 @@
                         </div>
                         <span class="SmallTopicContainer" id="TopicCon"><p style="font-size:0.8em;" class="solidText"> <?php printf($var[1]["title"]) ?> </p></span>
                         <span class="SmallHeadlineContainer" id="HeadlineCon" onmouseover="showContent(this)" onmouseout="hideContent(this)" ><p class="solidText" style="font-size:0.6em" onmouseover="showContent(this)" onmouseout="hideContent(this)"><?php printf($var[1]["content"]) ?></p> </span>
-                        <img class="imageSmall" id="AstroImage" src= <?php printf($var[1]["imgurl"]) ?>  >
+                        <img class="imageSmall" id="AstroImage" src= <?php printf($var[1]["image"]) ?>  >
                         
                     </div>
                     <div class="MediumInformationContainer item4">
                         <div class="SmallPictureContainer">
-                            <image class="imageSmall" src=<?php printf($var[2]["imgurl"]) ?>></image>
+                            <image class="imageSmall" src=<?php printf($var[2]["image"]) ?>></image>
                             
                         </div>
                         <div class="triangle-left"></div>

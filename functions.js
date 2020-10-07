@@ -47,4 +47,19 @@ function timerCycle() {
     setInterval(slideshowCycle, 30000);
 }
 
+function results (str) {
+    if (str.length != 0) {
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function () {
+            if(this.readyState == 4 && this.status == 200) {
+                document.getElementById("SearchPopup").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "SearchDatabase.php?q=" + str, true);
+        xmlhttp.send();
+
+    }
+    
+}
 

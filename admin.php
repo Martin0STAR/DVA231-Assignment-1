@@ -11,10 +11,10 @@
     <body onload="<?php adminPageLoad(); ?>">
 
     <div id="center">
-        <form method="post" action="<?php loadInput() ?>">
+        <form method="post" >
             <p> Specify filename for a new news-collection </p> 
             <label> File name </label> <input type="text" name="uInput" >
-            <input type ="submit" value="Apply"/>
+            <input type ="submit" value="Apply" name="sendButton"/>
         </form>
             
         <form method="post" >  
@@ -25,6 +25,10 @@
             if (isset($_POST['logoutbutton'])) {
             setLoggedout();
             LogInPageLoad();
+            }
+
+            if(isset($_POST['sendButton'])) {
+                loadInput();
             }
         ?>
     </div>
