@@ -49,4 +49,17 @@
         $_SESSION["isLoggedin"] = false;
     }
 
+    function loginCheck() {
+        $uname = "'" . $_POST["UsernameInput"] . "'";
+        $pass = "'" . $_POST["PasswordInput"] . "'";
+        $queryString = "SELECT * FROM users WHERE username = $uname AND password = $pass";
+        $db = new mysqli("localhost", "nasaUser", "123", "NasaDatabase");
+        $var = mysqli_query ($db, $queryString);
+
+        return (mysqli_num_rows($var) != 0);    
+
+
+        
+    }
+
 ?>

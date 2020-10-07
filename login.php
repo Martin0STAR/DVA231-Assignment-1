@@ -5,6 +5,10 @@
         <script src="functions.js"></script>
         <title>Nasa Unofficial Site</title>
         <?php require 'loadJson.php' ?>
+        <?php 
+     $db = new mysqli("localhost", "nasaUser", "123", "NasaDatabase") //AAAA
+
+        ?>
     </head>
     <body onload="<?php logInPageLoad(); ?>">
 
@@ -20,8 +24,13 @@
     </div>
 <?php 
 if (isset($_POST['loginbutton'])) {
-    setLoggedin();
-    logInPageLoad();
+    if (loginCheck()) {
+        setLoggedin();
+        logInPageLoad();
+    }
+    else {
+    }
+
 }
 ?>
     </body>

@@ -24,7 +24,7 @@
         <?php 
             if (isset($_POST['logoutbutton'])) {
             setLoggedout();
-            adminPageLoad();
+            LogInPageLoad();
             }
         ?>
     </div>

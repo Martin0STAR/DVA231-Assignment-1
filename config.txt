@@ -1,1 +1,1 @@
-news/news2.json
+news/Ass2News.json
