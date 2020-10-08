@@ -47,19 +47,40 @@ function timerCycle() {
     setInterval(slideshowCycle, 30000);
 }
 
-function results (str) {
-    if (str.length != 0) {
-        var xmlhttp = new XMLHttpRequest();
 
-        xmlhttp.onreadystatechange = function () {
-            if(this.readyState == 4 && this.status == 200) {
-                document.getElementById("SearchPopup").innerHTML = this.responseText;
-            }
-        };
-        xmlhttp.open("GET", "SearchDatabase.php?q=" + str, true);
+
+
+
+
+function results (str) {
+    var xmlhttp = new XMLHttpRequest();
+    $var = document.getElementById("searchBar").value;
+    if (str.length != 0) {
+        xmlhttp.onreadystatechange = sendContent;
+        xmlhttp.open('GET', 'SearchDatabase.php?value=' + $var, true);
         xmlhttp.send();
+       
 
     }
-    
+
+    function sendContent () {
+        try{        
+            if(xmlhttp.readyState === XMLHttpRequest.DONE && xmlhttp.status === 200) {
+                document.getElementById("searchPopup").innerHTML = xmlhttp.responseText; //Ändra på när allting fungerar
+                //alert(xmlhttp.responseText);
+            }
+            else {
+            //alert("Ouch");
+            }
+        }
+        catch(e){
+            alert(e.description + "fail");
+        }
+
+    }
+        
 }
+
+
+
 

@@ -75,6 +75,7 @@
     }
 
     function SearchDatabase () {
+        $userInput = 
         $db = new mysqli("localhost", "nasaUser", "123", "NasaDatabase");
         $queryString = "SELECT * FROM news WHERE title LIKE '%e%' LIMIT 0, 5";
         $var = mysqli_query ($db, $queryString);

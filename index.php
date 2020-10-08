@@ -21,9 +21,10 @@
                     <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > About </a> </td>
                     <td class="NavBtnTop"> <a href = "http://www.google.com" class="NavLinks" > NASA Audiences </a> </td>
                     <td class="NavBtnTop"> <a href = "login.php" class="NavLinks" > Admin </a> </td>
-                    <td><input id="searchBar" type="text" placeholder="Search" onkeyup="results(this.value)"></td>
+                    <td><form action=""><input id="searchBar" type="text" placeholder="Search" onkeyup="results(this.value)"></form></td>
                 </tr>
             </table>
+            
             <span id = "searchPopup">
             
             
@@ -34,6 +35,7 @@
             <p> <a href="https://www.google.com"> </a> </p> -->
             
             </span>
+            
             <table id="lowerNavbar">
                 <tr>
                     <td class="NavBtn"> <a href = "http://www.google.com" class="NavLinks" > Humans in Space </a> </td>
