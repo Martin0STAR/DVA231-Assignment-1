@@ -75,10 +75,10 @@
     }
 
     function SearchDatabase () {
-        $userInput = 
+        //$userInput = 
         $db = new mysqli("localhost", "nasaUser", "123", "NasaDatabase");
         $queryString = "SELECT * FROM news WHERE title LIKE '%e%' LIMIT 0, 5";
-        $var = mysqli_query ($db, $queryString);
+        
 
         $output = [];
         while ( $temp = mysqli_fetch_assoc($var)) {
@@ -87,4 +87,17 @@
         return $output;
 
     }
+
+    function GetById ($x) {
+        $PageId = $x;
+        $db = new mysqli("localhost", "nasaUser", "123", "NasaDatabase");
+        $queryString = "SELECT * FROM news WHERE id = $PageId ";
+        $var = mysqli_query ($db, $queryString);
+        if ($var != null) {
+                $output = mysqli_fetch_array($var);
+                return $output;
+             }
+             
+        }
+        
 ?>

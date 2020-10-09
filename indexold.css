@@ -1,0 +1,324 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    background-image: url(images/nasa-logo.svg);
+    background-repeat: no-repeat;
+    background-position-y: 1%;
+    background-position-x: 10%;
+    z-index: 10;
+}
+
+span {
+    background-color: blue;
+}
+
+hr {
+    color: white;
+    border-width: 0;
+    background-color: white;
+    height: 0.1em;
+}
+
+td {
+    padding: 0.4375em
+}
+
+video {
+    width: 27em;
+    height: 27em;
+    object-fit: fill;
+}
+
+h1 {
+    color: black;
+}
+
+.MediumInformationContainer {
+    height: 27em;
+    width: 54em;
+    background-color: brown;
+    display: flex;
+}
+
+.triangle-left { /* Hämtad från W3 Schools */
+    width: 0;
+    height: 0;
+    border-top: 1.5625em solid transparent;
+    border-right: 3.125em solid white;
+    border-bottom: 1.5625em solid transparent;
+    position: absolute;
+    margin-left: 24em;
+    margin-top: 11.5em;
+}
+
+.content {
+    border-collapse: separate;
+    border-spacing: 20em 20em;
+    background-color: orange;
+    width: 100%;
+}
+
+.NavLinks {
+    text-decoration: none;
+    color: white;
+}
+
+.NavLinksBlack {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+
+.NavBtn {
+    text-align: center;
+    display: table-cell;
+    padding: 0.75em;
+    display: inline;
+}
+
+.NavBtnTop {
+    text-align: center;
+    display: table-cell;
+    padding: 0.75em;
+    display: inline;
+}
+
+    .NavBtnTop:hover {
+        background-color: slateblue;
+        cursor: pointer;
+    }
+
+.NavBtn:hover {
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+.WideTopicContainer, .WideHeadlineContainer {
+    position: absolute;
+}
+
+.WidePictureContainer {
+    position: relative;
+}
+
+.WideTopicContainer {
+    background-color: rgba(173, 216, 230, 0.85);
+    margin-top: 12.7em;
+    margin-left: 1.58em;
+    padding-right: 2.5em;
+    padding-left: 1em;
+    font-size: 1.20em;
+    color: white;
+    height: 2.9em;
+}
+
+.WideHeadlineContainer {
+    background-color: rgba(128, 128, 128, 0.85);
+    color: white;
+    margin-top: 15em;
+    margin-left: 1.5em;
+    padding-right: 2.5em;
+    padding-left: 1em;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+    .WideHeadlineContainer:hover {
+        background-color: rgba(176, 219, 233, 1);
+        cursor: pointer;
+    }
+
+.SmallPictureContainer {
+    width: 27em;
+    height: 27em;
+    background-color: black;
+    position: relative;
+}
+
+.imageSmall {
+    height: 27em;
+    width: 27em;
+}
+
+.imageMedium {
+    height: 27em;
+    width: 54em;
+}
+
+.imageWide {
+    height: 27em;
+    width: 108em;
+}
+
+.SmallHeadlineContainer {
+    background-color: rgba(211, 216, 218, 0.85);
+    font-size: 1.20em;
+    color: white;
+    margin-top: 18.0em;
+    position: absolute;
+}
+
+.SmallTopicContainer {
+    background-color: rgba(173, 216, 230, 0.85);
+    font-size: 0.9em;
+    color: white;
+    margin-top: 21.42em;
+    position: absolute; /* Hover, osv */
+}
+
+    .SmallTopicContainer:hover {
+        color: rgba(173, 216, 230, 1);
+    }
+
+.solidText {
+    opacity: 1;
+}
+
+.TextBlackLeft {
+    margin-left: 1em;
+    color: black;
+}
+
+.textBlack {
+    color: black;
+}
+
+.InformationContainer {
+    width: 27em;
+    height: 27em;
+    background-color: #3366ff;
+    color: white;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-gap: 1.35em;
+    text-align: center;
+    margin: auto;
+}
+
+#outer-container {
+    display: grid;
+    height: 100%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.item2 {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item3 {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item4 {
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item5 {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item6 {
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item7 {
+    grid-row: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+
+#InformationWideBox {
+    flex: 1;
+    background-color: white;
+}
+
+#InfoFooterSpacing {
+    padding-left: 6em;
+}
+
+#topInfoboxSeparator {
+    margin-top: 15.5em;
+}
+
+#upperNavbar {
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0.75em;
+    z-index: 10;
+}
+
+#searchBar {
+    width: 8em;
+    padding: 0.5em;
+    background-color: #a8a8a8;
+    border: solid #a8a8a8;
+    background-image: url(images/search2.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+}
+
+#lowerNavbar {
+    background-color: gray;
+    border-spacing: 0.75em;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+
+#InfoFooterTable {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#FadeContainer {
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1000;
+    position: relative;
+    width: 27em;
+    height: 26em;
+    display: none;
+    padding-top: 1em;
+}
+
+#slideshow1 {
+    display: block;
+}
+
+#slideshow2 {
+    display: none;
+}
+
+#slideshow3 {
+    display: none;
+}
+
+#searchPopup {
+    background-color: black;
+    color:white;
+    z-index: 10001;
+    position: absolute;
+    margin-left: 69%;
+    padding-left:0.45em;
+    padding-right: 0.45em;
+}
