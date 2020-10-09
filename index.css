@@ -23,6 +23,10 @@ td {
     padding: 0.4375em
 }
 
+img {
+    object-fit:cover;
+}
+
 video {
     width: 27em;
     height: 27em;

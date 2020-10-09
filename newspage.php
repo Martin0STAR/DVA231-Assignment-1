@@ -19,7 +19,7 @@
         }
     </style>
     <meta charset=“UTF-8”>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="index.css"> 
         <?php
             require 'loadJson.php';
              $output = GetById(intval($_GET['id'])); 
@@ -36,7 +36,7 @@
         <div>
         
         <h1> <?php echo " $title"; ?> </h1>
-        <img src= "<?php echo "$imageURL"; ?>" >
+        <img src= "/<?php echo "$imageURL"; ?>" >
         <p> <?php echo "$content";  ?> </p>
         
         </div>
