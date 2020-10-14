@@ -55,7 +55,7 @@
                         <div id="slideshow1">
                             <span class="WideTopicContainer"><p class="solidText">Space Station</p> </span>
                             <span class="WideHeadlineContainer"> <p class="solidText">Expedition 48 Crews Lands Safely on Earth</p> </span>
-                            <img class="imageWide" src="images/planet.jpg">
+                            <img class="imageWide"  style="object-fit:cover;" src="images/planet.jpg">
                         </div>
         
                         <div id="slideshow2">

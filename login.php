@@ -17,7 +17,7 @@
             <p> Please sign in:  </p> 
             <label> Username </label> <input type="text" name="UsernameInput" >
             <br>
-            <label> Password </label> <input type="text" name="PasswordInput" >
+            <label> Password </label> <input type="password" name="PasswordInput" >
             <br>
             <input type ="submit" value="Log in" name="loginbutton"/>
         </form>

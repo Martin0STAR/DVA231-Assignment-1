@@ -6,7 +6,6 @@
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: black;
-            background-image: url(images/nasa-logo.svg);
             background-repeat: no-repeat;
             background-position-y: 1%;
             background-position-x: 10%;
@@ -16,6 +15,10 @@
         div {
             margin:auto;
             width:50%;
+        }
+        img{
+            width:40em;
+            height:40em;
         }
     </style>
     <meta charset=“UTF-8”>
